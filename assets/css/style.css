@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+section {
+  background-color: rgb(83, 83, 216);
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1280px;
+  width: 600px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+/* consist h1 tag from container */
+.container-heading {
+  color: white;
+  font-size: 40px;
+  line-height: 46px;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+/* input-btn is wrapper that  represent tag  input tag and button in  it */
+.wrapper__input__btn {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 5px;
+  width: 420px;
+  outline: none;
+}
+/* targeting input tag  */
+.wrapper__input__btn input {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  padding: 20px 10px;
+  width: 350px;
+}
+/* this button represent button to add items in it */
+.add__btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 100%;
+  color: rgb(183, 163, 163);
+  font-size: 32px;
+  border: none;
+}
+/* this basically wraps all the li content */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 5px 20px;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid rgb(221, 215, 215);
+  width: 400px;
+  height: auto;
+}
+/* this is basically targeting ul */
+#todoList {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 0 40px 0;
+}
+/* this is basically targeting ul child li*/
+#todoList li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: gray;
+  border-bottom: 2px solid #000;
+  padding: 20px 0 10px 0;
+}
+/* btn layout */
+.btn {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+/* btn color */
+.delBtn {
+  color: rgb(193, 19, 19);
+}
