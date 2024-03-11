@@ -1,5 +1,6 @@
 const todoList = document.getElementById("todoList");
 const formEl = document.querySelector(".form");
+
 // const wrapper = document.querySelector(".wrapper");
 formEl.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -35,6 +36,9 @@ const showTodoList = async () => {
       throw new Error("Failed to fetch new data");
     }
     const data = await response.json();
+    if (data.length > 0) {
+      document.querySelector(".wrapper").style.display = "flex";
+    }
     data.forEach((item) => {
       const listItems = document.createElement("li");
       const delBtn = document.createElement("button");

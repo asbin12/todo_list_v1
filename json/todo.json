@@ -1,12 +1,8 @@
 {
   "todoList": [
     {
-      "todoItems": "I am asbin",
+      "todoItems": "Hello",
       "id": 1
-    },
-    {
-      "todoItems": "Christmas Dinner at 6",
-      "id": 2
     }
   ]
 }
